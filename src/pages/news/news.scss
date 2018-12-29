@@ -1,0 +1,11 @@
+page-news {
+    .item-md, .item-ios{
+        padding-left: 0px;
+    }
+    ion-card-header{
+        white-space: normal;
+    }
+    .label-md , .label-ios{
+        margin: 0; 
+    }
+}
