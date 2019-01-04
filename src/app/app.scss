@@ -26,11 +26,17 @@
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon, .tabs-ios 
 .tab-button[aria-selected=true],
 {
-    color: #e67e69;
+    color: #f3998e;
 }
 .button-md{
     text-transform: none;
 }
 .content-md, .content-ios {
     color: #2f2f2f;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-text{
+    -webkit-transform : none;
+    -webkit-transition : none;
+    transform: none;
+    transition: none;
 }

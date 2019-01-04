@@ -8,4 +8,19 @@ page-news {
     .label-md , .label-ios{
         margin: 0; 
     }
+    .content-md, .content-ios{
+        background-color: #f7f6f6;
+    }
+    ion-spinner{
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        stroke: #f3998e;
+        top: 50%;
+        fill: #f3998e;
+      }
+
 }

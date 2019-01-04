@@ -1,18 +1,47 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-row>
+            <ion-col col-2>
+              <img src="../../assets/imgs/wva-logo.png" alt="" height="30">
+            </ion-col>
+            <ion-col col-10 padding-top>
+                World Vaishnava Association
+            </ion-col>
+          </ion-row>
+      </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-  
+<ion-content >
+  <ion-slides pager class="slide" autoplay="4000" loop="true">
+      <ion-slide>
+          <img src="../../assets/imgs/home.jpg" alt="">
+        </ion-slide>
+      <ion-slide>
+          <img src="../../assets/imgs/home2.jpg" alt="">
+        </ion-slide>
+      <ion-slide>
+          <img src="../../assets/imgs/home3.jpg" alt="">
+        </ion-slide>
+      <ion-slide>
+          <img src="../../assets/imgs/home4.jpg" alt="">
+      </ion-slide>
+  </ion-slides>
+
+  <ion-row class="about">
+      <p text-center padding-horizontal style="font-weight: 600;"> All Vaisnavas belong to one family, 
+          belong to the same tree of Lord Caitanya.</p>
+  </ion-row>
+  <div padding-horizontal>
+      <p>The last New from Vina</p>
+  </div>
+
+    <ion-card *ngFor="let item of new">
+        <ion-item>
+          <h2 [innerHTML]="item.title.rendered" text-wrap></h2>
+          <div [innerHTML]="item.excerpt.rendered" ></div>            
+                <ion-note>
+                    {{item.date | date:'medium'}}
+                </ion-note> 
+        </ion-item>
+      </ion-card>
 </ion-content>
